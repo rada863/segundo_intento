@@ -1,0 +1,107 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1a1a1a; /* Fondo oscuro */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+    color: #4CAF50; /* Verde para el logo */
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.logo a:hover {
+    color: #45a049; /* Verde más oscuro al hover */
+}
+
+/* Menú de navegación */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem; /* Espacio entre elementos */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 0.3s;
+}
+
+/* Efecto hover básico */
+.nav-link:hover {
+    color: #0af53d; /* Verde al pasar el mouse */
+}
+
+/* Efecto subrayado animado */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #4CAF50;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Subrayado al hover */
+}
+
+/* Estilo para el enlace activo (página actual) */
+.nav-link.active {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.nav-link.active::after {
+    width: 100%; /* Subrayado permanente para activo */
+}
+.nav-link {
+    display: inline-block; /* Necesario para transform */
+    transition: all 0.3s ease; /* Transición suave para todos los efectos */
+}
+
+.nav-link:hover {
+    transform: scale(1.05); /* Ligero zoom al hover */
+    opacity: 0.9;
+}.header {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+}
+
+.nav-link:hover {
+    text-shadow: 0 0 8px rgba(76, 175, 80, 0.7); /* Brillito verde sutil */
+}
+.nav-link {
+    padding: 0.5rem 1rem; /* Más espacio para el fondo */
+    border-radius: 4px; /* Esquinas redondeadas */
+}
+
+.nav-link:hover {
+    background-color: rgba(76, 175, 80, 0.1); /* Fondo verde muy tenue */
+}
+.logo h1 {
+    font-style: italic;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animación exagerada */
+}
+
+.logo h1:hover {
+    transform: rotate(-5deg) scale(1.1); /* Giro y escala */
+    color: #45a049;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Contacta a Hydra - Desarrollo de aplicaciones, sitios web y marketing digital">
+    <title>Contacto | Hydra Desarrollo de Software</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" href="/public/css/contacto.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="/public/index.html">
+                    <img src="/public/img/logo1.png" alt="Hydra Desarrollo Web" width="">
+                </a>
+            </div>
+           
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="/public/index.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="/public/page/servicio.html" class="nav-link"><i class="fas fa-code"></i> Servicios</a></li>
+                    <li><a href="/public/page/portafolio.html" class="nav-link"><i class="fas fa-briefcase"></i> Portafolio</a></li>
+                    <li><a href="/public/page/blog.html" class="nav-link"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="/public/page/contacto.htm" class="nav-link active"><i class="fas fa-envelope"></i> Contacto</a></li>
+                </ul>
+                <div class="burger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Contáctanos</h1>
+                <p>Estamos listos para convertir tus ideas en soluciones tecnológicas</p>
+            </div>
+        </section>
+
+        <!-- Contact Grid -->
+        <section class="contact-grid">
+            <div class="container">
+                <div class="contact-info">
+                    <h2>Información de contacto</h2>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Dirección</h3>
+                            <p>Av. Tecnológica 1234, Piso 8<br>Ciudad Digital, CP 5000</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Teléfonos</h3>
+                            <p>+54 11 1234-5678<br>+54 351 987-6543</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Correo electrónico</h3>
+                            <p>info@hydrasoft.com<br>consultas@hydrasoft.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Horario de atención</h3>
+                            <p>Lunes a Viernes: 9:00 - 18:00<br>Sábados: 10:00 - 13:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Envíanos un mensaje</h2>
+                    <form id="contactForm" action="/enviar-mensaje" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nombre completo*</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo electrónico*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Asunto*</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Selecciona un asunto</option>
+                                <option value="consulta">Consulta general</option>
+                                <option value="cotizacion">Solicitud de cotización</option>
+                                <option value="soporte">Soporte técnico</option>
+                                <option value="trabajo">Oportunidades de trabajo</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensaje*</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Deseo recibir novedades y promociones por correo electrónico</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Enviar mensaje <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Mapa -->
+        <section class="contact-map">
+            <div id="map"></div>
+            <div class="map-overlay">
+                <h3>Visita nuestras oficinas</h3>
+                <p>Estamos en el corazón de la zona tecnológica de la ciudad</p>
+                <a href="#" class="directions-btn"><i class="fas fa-directions"></i> Cómo llegar</a>
+            </div>
+        </section>
+        
+        <!-- Equipo de contacto -->
+        <section class="contact-team">
+            <div class="container">
+                <h2>Nuestro equipo de atención</h2>
+                <p class="section-subtitle">Conoce a las personas que estarán ayudándote</p>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="/img/team1.jpg" alt="Asesor comercial">
+                        <h3>María González</h3>
+                        <span>Asesora Comercial</span>
+                        <a href="mailto:maria@hydrasoft.com" class="team-email">maria@hydrasoft.com</a>
+                    </div>
+                    
+                    <div class="team-member">
+                        <img src="/img/team2.jpg" alt="Soporte técnico">
+                        <h3>Carlos Rodríguez</h3>
+                        <span>Soporte Técnico</span>
+                        <a href="mailto:soporte@hydrasoft.com" class="team-email">soporte@hydrasoft.com</a>
+                    </div>
+                    
+                    <div class="team-member">
+                        <img src="/img/team3.jpg" alt="Gerente de proyectos">
+                        <h3>Laura Martínez</h3>
+                        <span>Gerente de Proyectos</span>
+                        <a href="mailto:proyectos@hydrasoft.com" class="team-email">proyectos@hydrasoft.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="contact-cta">
+            <div class="container">
+                <h2>¿Listo para comenzar tu proyecto?</h2>
+                <p>Programa una consultoría gratuita con nuestros especialistas</p>
+                <a href="#" class="cta-btn">Agendar reunión <i class="fas fa-calendar-alt"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="/img/logo1.png" alt="Hydra Desarrollo Web" width="180">
+                    <p>Somos especialistas en desarrollo de software a medida, creando soluciones tecnológicas que impulsan negocios.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#">Desarrollo Web</a></li>
+                        <li><a href="#">Aplicaciones Móviles</a></li>
+                        <li><a href="#">Diseño UI/UX</a></li>
+                        <li><a href="#">Marketing Digital</a></li>
+                        <li><a href="#">Consultoría TI</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Equipo</a></li>
+                        <li><a href="#">Portafolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Tecnológica 1234, Ciudad Digital</li>
+                        <li><i class="fas fa-phone"></i> +54 11 1234-5678</li>
+                        <li><i class="fas fa-envelope"></i> info@hydrasoft.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Hydra Desarrollo de Software. Todos los derechos reservados.</p>
+                <div class="legal-links">
+                    <a href="#">Términos de servicio</a>
+                    <a href="#">Política de privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="/public/js/contacto.js"></script>
+    <script src="/public/js/main.js"></script>
+</body>
+</html>

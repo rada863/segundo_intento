@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portafolio de Hydra - Desarrollo de aplicaciones, sitios web y marketing digital">
+    <title>Portafolio | Hydra Desarrollo de Software</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/public/css/servicio.css">
+    <link rel="stylesheet" href="/public/css/portafolio.css">
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="/public/index.html">
+                    <img src="/public/img/logo1.png" alt="Hydra Desarrollo Web" width="">
+                </a>
+            </div>
+           
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="/public/index.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="/public/page/servicio.html" class="nav-link"><i class="fas fa-code"></i> Servicios</a></li>
+                    <li><a href="/public/page/portafolio.html" class="nav-link active"><i class="fas fa-briefcase"></i> Portafolio</a></li>
+                    <li><a href="/public/page/blog.html" class="nav-link"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="/public/page/contacto.htm" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+                </ul>
+                <div class="burger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="portfolio-hero">
+            <div class="container">
+                <h1>Nuestro Portafolio</h1>
+                <p>Descubre los proyectos que han marcado nuestra trayectoria en desarrollo de software</p>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="app">Aplicaciones</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                    <button class="filter-btn" data-filter="marketing">Marketing</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="portfolio-grid">
+            <div class="container">
+                <!-- Proyecto 1 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="/img/proyecto1.jpg" alt="Sistema de gestión empresarial">
+                        <div class="portfolio-overlay">
+                            <h3>Sistema de Gestión Empresarial</h3>
+                            <p>Plataforma web para administración de recursos humanos</p>
+                            <a href="#" class="view-btn">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>ERP Corporativo</h3>
+                        <span>Desarrollo Web</span>
+                        <div class="portfolio-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-img">
+                        <img src="/img/proyecto2.jpg" alt="Aplicación móvil de delivery">
+                        <div class="portfolio-overlay">
+                            <h3>App de Delivery</h3>
+                            <p>Solución móvil para restaurantes y repartidores</p>
+                            <a href="#" class="view-btn">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>FastDelivery</h3>
+                        <span>Aplicación Móvil</span>
+                        <div class="portfolio-tech">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>Google Maps API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-img">
+                        <img src="/img/proyecto3.jpg" alt="Tienda online de moda">
+                        <div class="portfolio-overlay">
+                            <h3>Tienda Online de Moda</h3>
+                            <p>E-commerce con integración de pasarelas de pago</p>
+                            <a href="#" class="view-btn">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>FashionStore</h3>
+                        <span>E-commerce</span>
+                        <div class="portfolio-tech">
+                            <span>Shopify</span>
+                            <span>JavaScript</span>
+                            <span>PayPal API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="portfolio-item" data-category="marketing">
+                    <div class="portfolio-img">
+                        <img src="/img/proyecto4.jpg" alt="Campaña de marketing digital">
+                        <div class="portfolio-overlay">
+                            <h3>Campaña Digital</h3>
+                            <p>Estrategia de crecimiento para startup tecnológica</p>
+                            <a href="#" class="view-btn">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>TechGrowth</h3>
+                        <span>Marketing Digital</span>
+                        <div class="portfolio-tech">
+                            <span>SEO</span>
+                            <span>Google Ads</span>
+                            <span>Redes Sociales</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="/img/proyecto5.jpg" alt="Plataforma educativa online">
+                        <div class="portfolio-overlay">
+                            <h3>Plataforma Educativa</h3>
+                            <p>Solución E-learning con aulas virtuales</p>
+                            <a href="#" class="view-btn">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>EduOnline</h3>
+                        <span>Desarrollo Web</span>
+                        <div class="portfolio-tech">
+                            <span>Laravel</span>
+                            <span>Vue.js</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 6 -->
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-img">
+                        <img src="/img/proyecto6.jpg" alt="Aplicación de fitness">
+                        <div class="portfolio-overlay">
+                            <h3>App de Fitness</h3>
+                            <p>Seguimiento de entrenamientos y nutrición</p>
+                            <a href="#" class="view-btn">Ver detalles</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>FitTracker</h3>
+                        <span>Aplicación Móvil</span>
+                        <div class="portfolio-tech">
+                            <span>React Native</span>
+                            <span>GraphQL</span>
+                            <span>Apple HealthKit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section class="testimonials">
+            <div class="container">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Hydra transformó completamente nuestra operación con su sistema de gestión. Increíble profesionalismo y atención al detalle."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="/img/cliente1.jpg" alt="Cliente satisfecho">
+                            <div>
+                                <h4>Carlos Méndez</h4>
+                                <span>CEO, Empresa XYZ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"La aplicación que desarrollaron superó nuestras expectativas. El equipo fue receptivo a todos nuestros requerimientos."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="/img/cliente2.jpg" alt="Cliente satisfecho">
+                            <div>
+                                <h4>Ana Rodríguez</h4>
+                                <span>Directora de Tecnología, ABC Corp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="portfolio-cta">
+            <div class="container">
+                <h2>¿Listo para comenzar tu proyecto?</h2>
+                <p>Contáctanos y llevemos tus ideas al siguiente nivel</p>
+                <a href="/public/page/contacto.htm" class="cta-btn">Solicitar cotización</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="/public/img/logo1.png" alt="Hydra Desarrollo Web" width="180">
+                    <p>Somos especialistas en desarrollo de software a medida, creando soluciones tecnológicas que impulsan negocios.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#">Desarrollo Web</a></li>
+                        <li><a href="#">Aplicaciones Móviles</a></li>
+                        <li><a href="#">Diseño UI/UX</a></li>
+                        <li><a href="#">Marketing Digital</a></li>
+                        <li><a href="#">Consultoría TI</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Equipo</a></li>
+                        <li><a href="#">Portafolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</li>
+                        <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> info@hydrasoft.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Hydra Desarrollo de Software. Todos los derechos reservados.</p>
+                <div class="legal-links">
+                    <a href="#">Términos de servicio</a>
+                    <a href="#">Política de privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/public/js/portafolio.js"></script>
+    <script src="/public/js/main.js"></script>
+</body>
+</html>

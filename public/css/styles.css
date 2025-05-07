@@ -1,13 +1,14 @@
 /* ===== ESTILOS GENERALES ===== */
 :root {
-    --primary: #4CAF50;       /* Verde corporativo */
-    --primary-dark: #45a049;  /* Verde oscuro */
-    --secondary: #2C3E50;     /* Azul oscuro */
-    --light: #f8f9fa;        /* Gris claro */
-    --dark: #343a40;         /* Gris oscuro */
-    --white: #ffffff;
-    --black: #212529;
-  }
+  --primary: violet;       /* Verde corporativo */
+  --primary-dark:rgb(154, 63, 154) --dark;  /* Verde oscuro */
+  --secondary:#B8860B;     /* Azul oscuro */
+  --light:black;        /* Gris claro */
+  --dark:#B8860B ;         /* Gris oscuro */
+  --white: #fdf9f9;
+  --black: #000000;
+}
+  
   
   * {
     margin: 0;
@@ -120,7 +121,7 @@
   /* ===== HERO SECTION ===== */
   .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url('../img/hero-bg.jpg') center/cover no-repeat;
+                url('/img/puerto_noche.png') center/cover no-repeat;
     color: var(--white);
     text-align: center;
     padding: 180px 0 100px;
@@ -323,7 +324,7 @@
   
   /* ===== FOOTER ===== */
   .footer {
-    background-color: var(--secondary);
+    background-color: var(--light);
     color: var(--white);
     padding: 60px 0 20px;
   }
